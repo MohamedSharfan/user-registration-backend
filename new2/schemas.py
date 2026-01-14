@@ -18,3 +18,22 @@ class UserResponse(BaseModel):
 
     class Config:
         from_attributes = True
+
+
+class Item(BaseModel):
+    title: str
+    description: str | None = None
+
+
+class ProductCreate(BaseModel):
+    name: str
+    price: int
+
+class ProductResponse(BaseModel):
+    id: int
+    name: str
+    price: int
+    created_at: datetime
+    
+    class Config:
+        from_attributes = True

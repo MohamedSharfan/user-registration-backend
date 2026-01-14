@@ -16,3 +16,10 @@ class User(Base):
     created_at = Column(DateTime, default= datetime.utcnow)
     password = Column(String)
 
+class Product(Base):
+    __tablename__ = "products"
+
+    id = Column(Integer, primary_key = True, index = True)
+    name = Column(String)
+    price = Column(Integer)
+    created_at = Column(DateTime, default= datetime.utcnow)

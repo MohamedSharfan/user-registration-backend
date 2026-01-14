@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordRequestForm
 from sqlalchemy.orm import Session
-from schemas import UserCreate, UserResponse
+from schemas import UserCreate, UserResponse, Item
 from database import SessionLocal
 from models import User
 from dependencies.auth import get_current_user
@@ -129,3 +129,5 @@ def get_users(sort_by : str = "age", order: str = "asc" ,db : Session = Depends(
     for user in users:
         user.skills = user.skills.split(",")
     return users
+
+
