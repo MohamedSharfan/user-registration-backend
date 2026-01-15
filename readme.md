@@ -50,7 +50,7 @@ SECRET_KEY=your_super_secret_key_here
 uvicorn main:app --reload
 ```
 
-## Visit http://127.0.0.1:8000/docs to explore the interactive API documentation.
+### Visit http://127.0.0.1:8000/docs to explore the interactive API documentation.
 
 ## 🔌 API Endpoints
 
