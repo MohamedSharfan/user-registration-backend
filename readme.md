@@ -59,7 +59,7 @@ SECRET_KEY=your_super_secret_key_here
 uvicorn main:app --reload
 ```
 
-## Visit http://127.0.0.1:8000/docs to explore the interactive API documentation.
+### Visit http://127.0.0.1:8000/docs to explore the interactive API documentation.
 
 ## 🔌 API Endpoints
 
@@ -88,5 +88,8 @@ uvicorn main:app --reload
 | GET    | `/products/items?skip=0&limit=10` | Get list of products (Paginated) | ❌            |
 
 ## 🛡️ License
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3e79c93084fc954d0319f8767deacaef4f26a487
 This project is licensed under the MIT License.
